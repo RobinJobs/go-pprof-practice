@@ -31,7 +31,7 @@ func (w *Wolf) Drink() {
 	log.Println(w.Name(), "drink")
 	for i := 0; i < 10; i++ {
 		go func() {
-			time.Sleep(30 * time.Second)
+			//time.Sleep(30 * time.Second)
 		}()
 	}
 }
@@ -55,7 +55,7 @@ func (w *Wolf) Howl() {
 	m.Lock()
 	go func() {
 		time.Sleep(time.Second)
-		m.Unlock()
+		//m.Unlock()
 	}()
 	m.Lock()
 }
